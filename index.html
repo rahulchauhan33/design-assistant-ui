@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Design Exec Agent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Design Executive Assistant</h1>
+    <div class="button-group">
+      <button onclick="sendPrompt('What design principles should we follow for a B2B SaaS dashboard?')">🧭 Design Strategy</button>
+      <button onclick="sendPrompt('How do I measure UX impact at scale in an enterprise product?')">📈 UX Metrics</button>
+      <button onclick="sendPrompt('Draft a design system adoption plan for a fast-growing team')">📐 Design Systems</button>
+      <button onclick="sendPrompt('Guide me to run a product design critique as a leader')">🗣️ Design Culture</button>
+    </div>
+
+    <textarea id="userInput" rows="4" placeholder="Type your question..."></textarea>
+    <button onclick="askAgent()">Ask</button>
+
+    <pre id="responseBox">🤖 Response will appear here...</pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
