@@ -7,7 +7,7 @@ async function askAgent() {
   const userInput = document.getElementById("userInput").value;
   document.getElementById("responseBox").innerText = "Thinking...";
 
-  const response = await fetch("https://huggingface.co/spaces/rcrahulkumar/design-executive-agent-hf", {
+const response = await fetch("https://rcrahulkumar--design-agent.hf.space/run/predict", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ data: [userInput] }),
